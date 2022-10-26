@@ -544,7 +544,7 @@
                                             <div class="rounded d-flex flex-column flex-lg-row align-items-lg-center justify-content-center bg-body p-5 min-h-75px">
                                                 <div class="layui-form-item">
                                                     <label>
-                                                        <select name="proid" class="layui-input" style="width: 100%;" v-for="(val,key) in programList">
+                                                        <select name="proid" class="layui-input" style="width: 100%;" v-for="(val,key,i) in programList">
                                                             <option value="{{val}}">{{key}}</option>
                                                         </select>
                                                     </label>
