@@ -13,7 +13,15 @@
 //如果是局部引入，使用前引入即可
 class Index{
     public function start(YM_request $request){
-        $request->render(__views__."/index/index.html");
+        $params = $request->params();
+        if(count($params)==1){
+            $request->render(__views__."/index/index.html");
+            return;
+        }
+        if(count($params)==2 and $params[0]=="index"){
+            $request->render(__views__."/index/".$params[1]);
+            return;
+        }
         //更多帮助请查看：https://ym-php.rkru.cn
     }
 }

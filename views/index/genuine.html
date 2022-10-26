@@ -1,0 +1,662 @@
+<!--/*
+ * @作者：AMEN
+ * @官网：https://www.ymypay.cn/
+ * @博客：https://blog.ymypay.cn/
+ * 湮灭网络工作室
+ */-->
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover">
+    <title>inis 正版查询</title>
+
+
+    <meta name="description" content="inis &middot; 新一代博客系统！这是市面上为数不多的新一代博客系统，整站封装，全站分离，真正意义上的前后端分离。每一行代码都用心设计，用最少的代码量和最优雅架构设计，实现最完美的系统，让你拥有更极致的体验。复杂的研究留给我们，简单的体验留给用户！">
+    <meta name="keywords" content="INIS API,inis博客系统,inis程序,inis系统,inis blog">
+    <meta name="author" content="inis,racns"/>
+    <meta itemprop="image" content="https://inis.cc/static/comm/image/logo_sm.png">
+
+
+    <link rel="stylesheet" href="{{__stylesheets__}}style.css">
+    <!--<link href="{{__stylesheets__}}prismjs.bundle.css" rel="stylesheet" type="text/css">-->
+    <link href="{{__stylesheets__}}plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="{{__stylesheets__}}style.bundle.css" rel="stylesheet" type="text/css">
+    <link href="{{__stylesheets__}}inis.min.css" rel="stylesheet" type="text/css">
+
+    <!--<link href="/static/comm/css/plugins.dark.bundle.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="/static/comm/css/style.dark.bundle.css" rel="stylesheet" type="text/css">-->
+
+    <script src="{{__stylesheets__}}vue3.js"></script>
+    <script src="{{__stylesheets__}}helper.js"></script>
+    <script src="{{__stylesheets__}}axios.min.js"></script>
+
+
+</head>
+<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled aside-fixed aside-default-enabled">
+
+<div class="d-flex flex-column flex-root">
+    <div class="page d-flex flex-row flex-column-fluid">
+        <!-- 侧边栏 - 开始 -->
+        <div id="kt_aside" class="aside aside-default aside-hoverable d-lg-none" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
+            <!-- LOGO - 开始 -->
+            <div class="aside-logo flex-column-auto pt-9 pb-5" id="kt_aside_logo">
+                <a href="/admin">
+                    <img alt="Logo" src="/static/comm/image/logo.png" width="90" class="max-h-50px logo-default">
+                    <img alt="Logo" src="/static/comm/image/logo_sm.png" width="30" class="max-h-50px logo-minimize">
+                </a>
+            </div>
+            <!-- LOGO - 结束 -->
+            <div class="aside-menu flex-column-fluid">
+
+                <div class="menu menu-column menu-fit menu-rounded menu-title-gray-600 menu-icon-gray-400 menu-state-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500 fw-bold fs-5 my-5 mt-lg-2 mb-lg-0" id="kt_aside_menu" data-kt-menu="true">
+                    <div class="menu-fit hover-scroll-y me-lg-n5 pe-lg-5 pt-5" id="kt_aside_menu_wrapper" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_aside_menu" data-kt-scroll-offset="20px" data-kt-scroll-dependencies="#kt_aside_logo, #kt_aside_footer">
+
+                        <div class="menu-item pt-5">
+                            <div class="menu-content">
+                                <span class="fw-bold text-muted text-uppercase fs-7">导航</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="/" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg t="1640715072303" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7969" width="32" height="32"><path d="M531.48 900.9c-214.02 0-388.13-174.09-388.13-388.11s174.11-388.15 388.13-388.15c165.69 0 313.21 105.22 367.1 261.81 6.85 19.93-3.74 41.6-23.67 48.46-19.91 6.85-41.62-3.72-48.48-23.65-43.28-125.82-161.82-210.33-294.96-210.33-171.95 0-311.85 139.9-311.85 311.87 0 171.93 139.9 311.83 311.85 311.83 110.18 0 213.29-59.11 269.14-154.2 10.63-18.18 34.02-24.28 52.2-13.59 18.16 10.65 24.25 34.04 13.58 52.18-69.47 118.35-197.8 191.88-334.91 191.88z" fill="#bfbfbf" p-id="7970"></path><path d="M997.4 342.79c-33.75 101.39-188.17 233.17-393.42 335.67-81.95 40.96-165.83 73.87-242.68 95.52-24.55 6.91-48.38 12.68-71.2 17.19-8.24 1.62-16.32 3.09-24.21 4.38-31.78 5.25-60.72 7.87-86.67 7.87-75.52 0-125.8-22.08-147.55-65.59C0.8 676.08 39.5 593.93 143.56 500.17c-0.14 4.19-0.21 8.4-0.21 12.62 0 29.28 3.26 57.82 9.44 85.26-53 58.03-58.93 93.58-52.89 105.66 7.86 15.74 43.99 26.9 107.32 22.17 20-1.49 42.71-4.56 68.1-9.58 5.61-1.11 11.29-2.3 17.04-3.57 84.08-18.62 181.86-54.71 277.52-102.51 116.37-58.11 208.48-122.93 270.22-180.51 21.6-20.15 39.49-39.41 53.39-57.18 15.75-20.14 26.39-38.37 31.54-53.83 2.79-8.42 5.3-20.12 1.36-28.01-7.15-14.36-38.67-25.11-93.7-22.84a389.253 389.253 0 0 0-72.57-68.76c156.85-25.89 214.19 16.6 234.5 57.55 8.59 17.1 16.11 46.08 2.78 86.15z" fill="#bfbfbf" p-id="7971"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">首页</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="//test.inis.cn" target="_blank" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg t="1641179816116" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6997" width="32" height="32"><path d="M441.344 642.048h-256V279.552h497.152v87.552s70.656-4.096 106.496 8.704V281.6s-2.048-113.152-108.544-113.152H192c0 2.048-106.496 10.752-106.496 119.296v347.648s-6.656 115.2 104.448 115.2 170.496 2.048 170.496 2.048 10.752 34.304-66.048 51.2c-80.896 14.848-153.6 14.848-164.352 70.656h431.104S435.2 782.848 441.344 642.048z" fill="#bfbfbf" p-id="6998"></path><path d="M725.504 418.304c-125.952 0-228.352 102.4-228.352 228.352s102.4 228.352 228.352 228.352 228.352-102.4 228.352-228.352-102.912-228.352-228.352-228.352z m-36.352 55.296c10.752-2.048 23.552-4.096 34.304-4.096 12.8 0 25.6 2.048 38.4 4.096l-2.048 2.048c12.8 36.352 21.504 70.656 25.6 104.448-45.056 6.144-85.504 4.096-117.248 0 4.096-34.304 12.8-68.096 25.6-104.448l-4.608-2.048z m-138.752 206.848c-2.048-10.752-4.096-21.504-4.096-34.304 0-19.456 4.096-38.4 10.752-57.344 19.456 10.752 40.448 16.896 59.904 23.552-2.048 27.648-2.048 55.296 2.048 87.552-43.008-8.704-68.608-19.456-68.608-19.456z m21.504 51.2c19.456 6.144 38.4 12.8 55.296 16.896 4.096 16.896 8.704 34.304 14.848 53.248-29.696-14.848-55.296-39.936-70.144-70.144z m51.2-162.304c-25.6-6.144-42.496-14.848-47.104-16.896 16.896-27.648 40.448-49.152 68.096-64-8.192 21.504-16.896 49.152-20.992 80.896z m136.192 249.856c-10.752 2.048-23.552 4.096-34.304 4.096-10.752 0-21.504-2.048-31.744-2.048 0-2.048-10.752-25.6-19.456-64 38.4 4.096 72.704 4.096 104.448 0-8.192 34.304-16.896 55.296-18.944 61.952z m25.6-111.104c-45.056 6.656-85.504 4.096-119.296 0-2.048-25.6-4.096-53.248-2.048-82.944 47.104 8.704 89.6 6.144 125.952 0 0 29.696 0 57.344-4.608 82.944z m89.6-153.6c-14.848 6.656-29.696 10.752-45.056 14.848-6.656-31.744-12.8-57.344-19.456-76.8 26.112 15.36 49.664 36.352 64.512 61.952z m-64 245.248c6.144-16.896 10.752-34.304 14.848-51.2 21.504-4.096 38.4-10.752 53.248-16.896-14.336 30.208-37.888 53.248-68.096 68.096z m87.552-119.296c-21.504 8.704-42.496 14.848-64 19.456 4.096-31.744 4.096-59.904 2.048-87.552 31.744-10.752 53.248-21.504 57.344-23.552 6.144 16.896 10.752 36.352 10.752 57.344-2.048 12.8-4.096 23.552-6.144 34.304z" fill="#bfbfbf" p-id="6999"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">试用</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="//inis.cn/#/article/1" target="_blank" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg t="1641973141789" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2189" width="32" height="32"><path d="M938.726888 481.287227c-0.722653-15.175723-13.007763-26.015526-28.183486-25.292873s-26.015526 13.730416-25.292873 28.183487c0 6.503881 0.722653 13.007763 0.722654 20.234297 0 211.737474-171.991531 384.451658-384.451659 384.451659s-384.451658-171.991531-384.451658-384.451659 171.991531-384.451658 384.451658-384.451658c56.366972 0 110.565984 11.562456 161.151729 35.410021l17.343684 8.671842c13.007763 7.226535 29.628793 2.16796 36.132675-11.562456 7.226535-13.007763 2.16796-29.628793-11.562456-36.132675-6.503881-3.613267-13.007763-6.503881-19.511644-9.394495-57.812279-26.738179-119.237826-40.468596-183.553988-40.468596-241.366267 0-437.928017 196.56175-437.928017 437.928017s196.56175 437.928017 437.928017 437.928017S939.449541 745.778405 939.449541 504.412138c0-7.949188-0.722653-15.175723-0.722653-23.124911z" p-id="2190" fill="#bfbfbf"></path><path d="M893.199718 377.947777m-28.90614 0a28.90614 28.90614 0 1 0 57.812279 0 28.90614 28.90614 0 1 0-57.812279 0Z" p-id="2191" fill="#bfbfbf"></path><path d="M849.840508 283.280169m-28.90614 0a28.90614 28.90614 0 1 0 57.81228 0 28.90614 28.90614 0 1 0-57.81228 0Z" p-id="2192" fill="#bfbfbf"></path><path d="M779.743119 201.620325m-28.906139 0a28.90614 28.90614 0 1 0 57.812279 0 28.90614 28.90614 0 1 0-57.812279 0Z" p-id="2193" fill="#bfbfbf"></path><path d="M622.927311 381.561044l36.855328-83.105151c5.781228-13.730416 0-29.628793-13.730416-35.410021-13.730416-5.781228-29.628793 0-35.410021 13.730416l-43.35921 98.280875-2.16796 6.503881h-99.726182c-0.722653-2.16796-0.722653-4.335921-2.167961-6.503881l-43.359209-98.280875c-5.781228-13.730416-21.679605-19.511644-35.410022-13.730416s-19.511644 21.679605-13.730416 35.410021l36.855328 83.105151h-96.112914c-15.175723 0-26.738179 12.285109-26.73818 26.73818s12.285109 26.738179 26.73818 26.738179h168.378264v137.304164h-168.378264c-15.175723 0-26.738179 12.285109-26.73818 26.738179s12.285109 26.738179 26.73818 26.738179h168.378264v134.41355c0 15.175723 12.285109 26.738179 26.738179 26.738179 15.175723 0 26.738179-12.285109 26.738179-26.738179v-134.41355h169.100917c15.175723 0 26.738179-12.285109 26.73818-26.738179s-12.285109-26.738179-26.73818-26.738179h-169.82357v-137.304164h169.100917c15.175723 0 26.738179-12.285109 26.738179-26.738179s-12.285109-26.738179-26.738179-26.73818h-78.769231z" p-id="2194" fill="#bfbfbf"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">购买</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="https://gitee.com/inis-cloud" target="_blank" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg t="1640934629141" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3347" width="32" height="32"><path d="M512 1024C229.248 1024 0 794.752 0 512S229.248 0 512 0s512 229.248 512 512-229.248 512-512 512z m259.168-568.896h-290.752a25.28 25.28 0 0 0-25.28 25.28l-0.032 63.232c0 13.952 11.296 25.28 25.28 25.28h177.024a25.28 25.28 0 0 1 25.28 25.28v12.64a75.84 75.84 0 0 1-75.84 75.84h-240.224a25.28 25.28 0 0 1-25.28-25.28v-240.192a75.84 75.84 0 0 1 75.84-75.84h353.92a25.28 25.28 0 0 0 25.28-25.28l0.064-63.2a25.312 25.312 0 0 0-25.28-25.312H417.184a189.632 189.632 0 0 0-189.632 189.6v353.952c0 13.952 11.328 25.28 25.28 25.28h372.928a170.656 170.656 0 0 0 170.656-170.656v-145.376a25.28 25.28 0 0 0-25.28-25.28z" p-id="3348" fill="#bfbfbf"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">Gitee</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="https://github.com/inis-cloud" target="_blank" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg t="1640934605319" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2860" width="32" height="32"><path d="M511.957333 21.333333C241.024 21.333333 21.333333 240.981333 21.333333 512c0 216.832 140.544 400.725333 335.573334 465.664 24.490667 4.394667 32.256-10.069333 32.256-23.082667 0-11.690667 0.256-44.245333 0-85.205333-136.448 29.610667-164.736-64.64-164.736-64.64-22.314667-56.704-54.4-71.765333-54.4-71.765333-44.586667-30.464 3.285333-29.824 3.285333-29.824 49.194667 3.413333 75.178667 50.517333 75.178667 50.517333 43.776 75.008 114.816 53.333333 142.762666 40.789333 4.522667-31.658667 17.152-53.376 31.189334-65.536-108.970667-12.458667-223.488-54.485333-223.488-242.602666 0-53.546667 19.114667-97.322667 50.517333-131.669334-5.034667-12.330667-21.930667-62.293333 4.778667-129.834666 0 0 41.258667-13.184 134.912 50.346666a469.802667 469.802667 0 0 1 122.88-16.554666c41.642667 0.213333 83.626667 5.632 122.88 16.554666 93.653333-63.488 134.784-50.346667 134.784-50.346666 26.752 67.541333 9.898667 117.504 4.864 129.834666 31.402667 34.346667 50.474667 78.122667 50.474666 131.669334 0 188.586667-114.730667 230.016-224.042666 242.090666 17.578667 15.232 33.578667 44.672 33.578666 90.453334v135.850666c0 13.141333 7.936 27.605333 32.853334 22.869334C862.250667 912.597333 1002.666667 728.746667 1002.666667 512 1002.666667 240.981333 783.018667 21.333333 511.957333 21.333333z" p-id="2861" fill="#bfbfbf"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">GitHub</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item pt-5">
+                            <div class="menu-content">
+                                <span class="fw-bold text-muted text-uppercase fs-7">应用</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="/index/themes.html" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path opacity="0.3" d="M22 12C22 13.8 21.5 15.5 20.7 17L14.9 7H20.7C21.5 8.5 22 10.2 22 12ZM3.3 7L6.2 12L12 2C8.3 2 5.1 4 3.3 7ZM3.3 17C5 20 8.3 22 12 22L14.9 17H3.3Z" fill="black"></path><path d="M20.7 7H9.2L12.1 2C15.7 2 18.9 4 20.7 7ZM3.3 7C2.4 8.5 2 10.2 2 12C2 13.8 2.5 15.5 3.3 17H9.10001L3.3 7ZM17.8 12L12 22C15.7 22 18.9 20 20.7 17L17.8 12Z" fill="black"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">主题</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="/index/tutorials.html" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="black"></path><path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="black"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">教程</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="/index/genuine.html" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg t="1641112991857" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1494" width="32" height="32"><path d="M512 895.949a382.106 382.106 0 0 1-183.654-46.746l37.068-37.069A332.083 332.083 0 0 0 512 846.336 334.336 334.336 0 1 0 177.664 512a332.288 332.288 0 0 0 62.874 194.662l-35.38 35.38A381.338 381.338 0 0 1 128.051 512c0-212.07 171.879-383.949 383.949-383.949S895.949 299.93 895.949 512 724.07 895.949 512 895.949z m162.867-247.091c16.999 1.228 26.675 9.83 29.133 25.702 0 18.38-8.5 28.16-25.498 29.389H345.498c-15.77-1.229-24.27-11.008-25.498-29.389 1.178-15.923 9.677-24.474 25.498-25.702H343.5V452.3c0-18.381 9.113-28.775 27.29-31.232 18.227 2.457 27.903 12.851 29.132 31.232v196.557h78.285V375.142H354.611c-16.998 0-26.112-9.164-27.29-27.545 1.178-17.152 10.292-26.317 27.29-27.597h311.143c15.77 1.229 24.883 10.394 27.29 27.546-2.458 18.38-11.572 27.545-27.29 27.545h-129.23v97.383h125.594c15.77 1.228 24.884 11.008 27.29 29.388-2.458 18.381-11.571 27.546-27.29 27.546H536.525v119.398h138.342z" p-id="1495" fill="#bfbfbf"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">正版查询</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a onclick="toastr.warning('客官，这个功能还没做呢，请不要着急！')" href="javascript:;" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg t="1640715908492" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13745" width="32" height="32"><path d="M310.857143 176.749714A134.107429 134.107429 0 0 0 444.964571 310.857143h134.070858A134.107429 134.107429 0 0 0 713.142857 176.749714h67.035429A134.107429 134.107429 0 0 1 914.285714 310.857143v469.321143A134.107429 134.107429 0 0 1 780.178286 914.285714H243.821714A134.107429 134.107429 0 0 1 109.714286 780.178286V310.857143a134.107429 134.107429 0 0 1 134.107428-134.107429H310.857143z m0 0h402.285714-402.285714z m234.678857 268.214857a33.536 33.536 0 1 0 0 67.035429h201.142857a33.536 33.536 0 0 0 0-67.035429h-201.142857z m0 201.142858a33.536 33.536 0 1 0 0 67.035428h201.142857a33.536 33.536 0 0 0 0-67.035428h-201.142857z m-220.781714-187.245715l-23.698286-23.734857a33.536 33.536 0 0 0-47.433143 47.433143l47.433143 47.396571a33.426286 33.426286 0 0 0 47.396571 0l94.829715-94.829714a33.536 33.536 0 1 0-47.433143-47.396571L324.754286 458.825143z m0 201.142857l-23.698286-23.734857a33.536 33.536 0 0 0-47.433143 47.433143l47.433143 47.396572a33.426286 33.426286 0 0 0 47.396571 0l94.829715-94.829715a33.536 33.536 0 1 0-47.433143-47.396571L324.754286 659.968zM444.964571 109.714286h134.070858a67.035429 67.035429 0 1 1 0 134.107428h-134.070858a67.035429 67.035429 0 0 1 0-134.107428z" p-id="13746" fill="#bfbfbf"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">开发日志</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="https://docs.inis.cc/#/other/support" target="_blank" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg t="1641113099276" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1225" width="32" height="32"><path d="M542.6688 85.333333c-74.325333 0-133.307733 58.026667-133.307733 133.393067 0 43.861333-37.922133 113.578667-80.093867 148.4288-30.754133 25.412267-98.013867 45.226667-200.055467 56.661333l-3.413333 0.4608a68.266667 68.266667 0 0 0-57.258667 67.328l-0.238933 374.442667-0.0512 0.256c-0.170667 1.194667-0.1024 2.269867 0.017067 3.822933l0.085333 3.413334a68.2496 68.2496 0 0 0 68.1984 64.853333l612.096 0.136533 0.341333 0.0512c0.836267 0.0512 1.6896 0.085333 2.542934 0.085334 25.463467 0 50.568533-7.168 72.430933-21.026134l4.693333-3.072a133.205333 133.205333 0 0 0 40.772267-45.2096l1.604267-3.072-1.6384 2.5088c4.642133-6.5024 8.021333-13.824 10.103466-21.6064l74.069334-326.894933 0.768-3.242667c0.9216-4.488533 1.365333-9.557333 1.2288-14.728533l-0.068267-1.092267-0.119467 2.474667a132.949333 132.949333 0 0 0-20.206933-81.271467l-2.6112-4.061866c-23.125333-34.577067-61.013333-56.081067-102.2976-59.204267l-2.679467-0.170667-1.024-0.136533a61.969067 61.969067 0 0 0-7.560533-0.4608l-145.442133-0.1024 1.8432-8.8576a393.728 393.728 0 0 0 7.185066-75.025067c0-28.501333-3.242667-56.951467-9.472-85.333333l-0.699733-2.696533a34.116267 34.116267 0 0 0-0.9216-2.628267l-0.477867-1.041067-0.682666-2.4576A133.4272 133.4272 0 0 0 542.6688 85.333333z m0 68.266667a65.160533 65.160533 0 0 1 62.5664 47.274667l1.553067 5.922133 0.6144 1.672533-0.955734-4.727466a323.703467 323.703467 0 0 1-10.120533 177.425066l-0.750933 2.389334a34.133333 34.133333 0 0 0 32.938666 42.973866L818.670933 426.666667l1.604267 0.238933 2.423467 0.187733a66.986667 66.986667 0 0 1 54.6304 31.573334 64.853333 64.853333 0 0 1 10.154666 35.84l-0.273066 6.877866 0.1024 2.525867-73.796267 325.700267-1.1264 1.7408-1.245867 2.269866a65.314133 65.314133 0 0 1-23.552 26.2656l-3.720533 2.2016a66.833067 66.833067 0 0 1-28.125867 8.192l-2.133333 0.0512-2.048-0.068266L136.533333 870.126933l0.256-378.4704c114.210133-12.782933 192.273067-35.7888 235.946667-71.867733 55.415467-45.806933 102.3488-130.594133 104.789333-195.822933l0.085334-5.239467c0-37.410133 28.16-65.1264 65.041066-65.1264z" fill="#bfbfbf" p-id="1226"></path><path d="M290.133333 580.266667v187.733333a34.133333 34.133333 0 0 1-34.133333 34.133333h-34.133333V546.133333h34.133333a34.133333 34.133333 0 0 1 34.133333 34.133334z" fill="#bfbfbf" p-id="1227"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">INIS赞助商</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="https://docs.inis.cc/#/start/install-inis-system" target="_blank" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg t="1641113179615" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4598" width="32" height="32"><path d="M513.3 1023.9c-36.5 0-73.2-3.9-109.7-11.8C270.1 983 155.8 903.7 81.8 788.7-31.8 611.9-26.7 387 94.9 215.6c14.7-20.7 43.4-25.5 64-10.9 20.7 14.7 25.5 43.3 10.9 64C70 409.4 65.8 594 159 739c60.7 94.4 154.5 159.5 264.1 183.3 109.6 23.9 222 3.5 316.3-57.2 194.8-125.3 251.4-385.7 126.1-580.5-125.2-194.8-385.6-251.3-580.4-126-21.3 13.7-49.7 7.5-63.4-13.8-13.7-21.3-7.5-49.7 13.8-63.4C472.8-71.3 790.2-2.4 942.8 235c152.6 237.4 83.7 554.7-153.6 707.4-83.6 53.7-178.8 81.5-275.9 81.5z" fill="#cdcdcd" p-id="4599"></path><path d="M511.1 674.8m-58.6 0a58.6 58.6 0 1 0 117.2 0 58.6 58.6 0 1 0-117.2 0Z" fill="#cdcdcd" p-id="4600"></path><path d="M511.9 564.7c-25.4 0-45.9-20.6-45.9-45.9v-177c0-25.4 20.6-45.9 45.9-45.9 25.4 0 45.9 20.6 45.9 45.9v177c0.1 25.3-20.5 45.9-45.9 45.9z" fill="#cdcdcd" p-id="4601"></path></svg>
+							</span>
+						</span>
+                                <span class="menu-title">安装与使用</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-content">
+                                <div class="separator mx-1 my-4"></div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="https://docs.inis.cc" target="_blank" class="menu-link">
+						<span class="menu-icon">
+							<span class="svg-icon svg-icon-2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+									<path d="M16.95 18.9688C16.75 18.9688 16.55 18.8688 16.35 18.7688C15.85 18.4688 15.75 17.8688 16.05 17.3688L19.65 11.9688L16.05 6.56876C15.75 6.06876 15.85 5.46873 16.35 5.16873C16.85 4.86873 17.45 4.96878 17.75 5.46878L21.75 11.4688C21.95 11.7688 21.95 12.2688 21.75 12.5688L17.75 18.5688C17.55 18.7688 17.25 18.9688 16.95 18.9688ZM7.55001 18.7688C8.05001 18.4688 8.15 17.8688 7.85 17.3688L4.25001 11.9688L7.85 6.56876C8.15 6.06876 8.05001 5.46873 7.55001 5.16873C7.05001 4.86873 6.45 4.96878 6.15 5.46878L2.15 11.4688C1.95 11.7688 1.95 12.2688 2.15 12.5688L6.15 18.5688C6.35 18.8688 6.65 18.9688 6.95 18.9688C7.15 18.9688 7.35001 18.8688 7.55001 18.7688Z" fill="black"></path>
+									<path opacity="0.3" d="M10.45 18.9687C10.35 18.9687 10.25 18.9687 10.25 18.9687C9.75 18.8687 9.35 18.2688 9.55 17.7688L12.55 5.76878C12.65 5.26878 13.25 4.8687 13.75 5.0687C14.25 5.1687 14.65 5.76878 14.45 6.26878L11.45 18.2688C11.35 18.6688 10.85 18.9687 10.45 18.9687Z" fill="black"></path>
+								</svg>
+							</span>
+						</span>
+                                <span class="menu-title">
+						    INIS API文档 
+    						<span class="badge badge-changelog badge-light-danger bg-hover-danger text-hover-white fw-bold fs-9 px-2 ms-2">V2.0</span>
+						</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 侧边栏 - 结束 -->
+        <div class="wrapper d-flex flex-column flex-row-fluid px-0" id="kt_wrapper">
+            <!-- 顶部导航 - 开始 -->
+            <div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header">
+                <div class="container-xxl flex">
+                    <div class="container-fluid d-flex align-items-stretch justify-content-between">
+                        <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
+                            <div class="d-flex align-items-center d-lg-none">
+                                <div class="btn btn-icon btn-active-color-primary ms-n2 me-1" id="kt_aside_toggle">
+    					<span class="svg-icon svg-icon-2x">
+    						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    							<path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="black"></path>
+    							<path opacity="0.3" d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z" fill="black"></path>
+    						</svg>
+    					</span>
+                                </div>
+                            </div>
+                            <a href="/" class="d-none d-lg-block">
+                                <img alt="Logo" src="/static/comm/image/logo.png" height="30">
+                            </a>
+                            <a href="/" class="d-lg-none">
+                                <img alt="Logo" src="/static/comm/image/logo_sm.png" width="30">
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+                            <div class="d-flex align-items-stretch">
+                                <div class="align-items-center ms-1 ms-lg-3 d-none d-lg-flex">
+                                    <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px">
+                                        <a href="/">
+                                            首页
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="align-items-center ms-1 ms-lg-3 d-none d-lg-flex">
+                                    <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px">
+                                        <a href="https://docs.inis.cc" target="_blank">
+                                            文档
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="align-items-center ms-1 ms-lg-3 d-none d-lg-flex">
+                                    <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px">
+                                        <a href="//test.inis.cn" target="_blank">
+                                            试用
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="align-items-center ms-1 ms-lg-3 d-none d-lg-flex">
+                                    <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px">
+                                        <a href="//inis.cn/article/1.html" target="_blank">
+                                            购买
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="align-items-center ms-1 ms-lg-3 d-none d-lg-flex">
+                                    <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px">
+                                        <a href="https://github.com/inis-cloud" target="_blank">
+                                            GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="align-items-center ms-1 ms-lg-3 d-none d-lg-flex">
+                                    <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px">
+                                        <a href="https://gitee.com/inis-cloud" target="_blank">
+                                            Gitee
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-stretch flex-shrink-0">
+                                <div id="kt_header_search" class="d-flex align-items-center w-lg-200px" data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter" data-kt-search-layout="menu" data-kt-search-responsive="lg" data-kt-menu-trigger="auto" data-kt-menu-permanent="true" data-kt-menu-placement="bottom-start">
+                                    <div data-kt-search-element="toggle" class="d-flex d-lg-none align-items-center">
+                                        <div class="btn btn-icon btn-icon-gray-500 btn-active-light-primary">
+    							<span class="svg-icon svg-icon-2">
+    								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    									<rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="black"></rect>
+    									<path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="black"></path>
+    								</svg>
+    							</span>
+                                        </div>
+                                    </div>
+                                    <form data-kt-search-element="form" class="d-none d-lg-block w-100 position-relative mb-5 mb-lg-0" autocomplete="off">
+                                        <input type="hidden">
+                                        <span class="svg-icon svg-icon-2 svg-icon-gray-500 position-absolute top-50 translate-middle-y ms-0">
+    							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    								<rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="black"></rect>
+    								<path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="black"></path>
+    							</svg>
+    						</span>
+                                        <input v-model="search" type="text" class="form-control form-control-flush ps-10" placeholder="这是个假搜索" data-kt-search-element="input">
+                                        <span class="position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-1" data-kt-search-element="spinner">
+    							<span class="spinner-border h-15px w-15px align-middle text-gray-400"></span>
+    						</span>
+                                        <span class="btn btn-flush btn-icon-gray-600 btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 d-none" data-kt-search-element="clear">
+    							<span class="svg-icon svg-icon-1 me-0">
+    								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    									<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black"></rect>
+    									<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black"></rect>
+    								</svg>
+    							</span>
+    						</span>
+                                    </form>
+                                    <div data-kt-search-element="content" class="menu menu-sub menu-sub-dropdown w-300px w-md-400px py-7 px-7 overflow-hidden">
+                                        <div data-kt-search-element="wrapper">
+                                            <div data-kt-search-element="categories" class="d-flex overflow-auto position-relative" data-kt-buttons="true">
+                                                <a class="btn btn-light-primary active rounded-pill me-1 py-2 px-4" data-kt-search-category="all">All</a>
+                                                <a class="btn btn-light-primary rounded-pill me-1 py-2 px-4" data-kt-search-category="targets">Targets</a>
+                                                <a class="btn btn-light-primary rounded-pill me-1 py-2 px-4" data-kt-search-category="projects">Projects</a>
+                                                <a class="btn btn-light-primary rounded-pill me-1 py-2 px-4" data-kt-search-category="users">Users</a>
+                                            </div>
+                                            <div class="separator border-gray-200 my-6"></div>
+                                            <div data-kt-search-element="recently-viewed">
+                                                <div class="d-flex flex-stack fw-bold">
+                                                    <span class="text-muted fs-5 me-2">Recently Viewed:</span>
+                                                    <div data-kt-search-element="recently-viewed-clear" class="btn btn-link fw-6">Clear</div>
+                                                </div>
+                                                <div class="scroll-y mh-200px mh-lg-300px my-2 me-n2 pe-2">
+                                                    <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
+                                                        <div class="symbol symbol-30px me-4">
+    											<span class="symbol-label bg-light-primary">
+    												<span class="svg-icon svg-icon-2 svg-icon-primary">
+    													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    														<path d="M20 14H18V10H20C20.6 10 21 10.4 21 11V13C21 13.6 20.6 14 20 14ZM21 19V17C21 16.4 20.6 16 20 16H18V20H20C20.6 20 21 19.6 21 19ZM21 7V5C21 4.4 20.6 4 20 4H18V8H20C20.6 8 21 7.6 21 7Z" fill="black"></path>
+    														<path opacity="0.3" d="M17 22H3C2.4 22 2 21.6 2 21V3C2 2.4 2.4 2 3 2H17C17.6 2 18 2.4 18 3V21C18 21.6 17.6 22 17 22ZM10 7C8.9 7 8 7.9 8 9C8 10.1 8.9 11 10 11C11.1 11 12 10.1 12 9C12 7.9 11.1 7 10 7ZM13.3 16C14 16 14.5 15.3 14.3 14.7C13.7 13.2 12 12 10.1 12C8.10001 12 6.49999 13.1 5.89999 14.7C5.59999 15.3 6.19999 16 7.39999 16H13.3Z" fill="black"></path>
+    													</svg>
+    												</span>
+    											</span>
+                                                        </div>
+                                                        <div class="fw-bold">
+                                                            <span class="fs-6 text-gray-800">Si-Fi Project by AU Themes</span>
+                                                            <span class="fs-7 text-muted">#45670</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div data-kt-search-element="empty" class="text-center d-none">
+                                                <div class="text-muted fw-bold fs-5 py-10">No result found</div>
+                                                <div class="text-center px-4">
+                                                    <img src="https://q.qlogo.cn/g?b=qq&nk=97783391&s=640" class="mw-100 mh-200px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div v-if="!0" class="align-items-center ms-1 ms-lg-3 flex">
+                                    <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px">
+                                        <a href="/admin.html">
+                                            登录
+                                        </a>
+                                    </div>
+                                </div>
+                                <div v-else class="d-flex align-items-center ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
+                                    <div class="cursor-pointer symbol symbol-35px symbol-lg-35px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-6 w-275px" data-kt-menu="true">
+                                        <div class="menu-item px-3">
+                                            <div class="menu-content d-flex align-items-center px-3">
+                                                <div class="symbol symbol-50px me-5">
+                                                    <img src="">
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="fw-bolder d-flex align-items-center fs-5">
+                                                        <span v-if="0" class="badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2">管理员</span>
+                                                        <span v-else-if="1" class="badge badge-light-primary fw-bolder fs-8 px-2 py-1 ms-2">正式会员</span>
+                                                        <span v-else class="badge badge-light-info fw-bolder fs-8 px-2 py-1 ms-2">关注</span>
+                                                    </div>
+                                                    <a href="#" class="fw-bold text-muted text-hover-primary fs-7"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="separator my-2"></div>
+                                        <div class="menu-item px-5">
+                                            <a href="/admin.html" class="menu-link px-5">控制台</a>
+                                        </div>
+                                        <div class="menu-item px-5">
+                                            <a href="/admin/profile.html" class="menu-link px-5">个人资料</a>
+                                        </div>
+                                        <div v-if="1" class="menu-item px-5">
+                                            <a href="/admin/api" class="menu-link px-5">
+                                                <span class="menu-text">我的API</span>
+                                                <span class="menu-badge">
+    									<span class="badge badge-light-success badge-circle fw-bolder fs-7">0</span>
+    								</span>
+                                            </a>
+                                        </div>
+                                        <div v-if="1" class="menu-item px-5">
+                                            <a href="/admin/tutorials.html" class="menu-link px-5">
+                                                <span class="menu-text">我的教程</span>
+                                                <span class="menu-badge">
+    									<span class="badge badge-light-primary badge-circle fw-bolder fs-7">0</span>
+    								</span>
+                                            </a>
+                                        </div>
+                                        <div class="menu-item px-5">
+                                            <a v-on:click="signOut()" href="javascript:;" class="menu-link px-5">退出登录</a>
+                                        </div>
+                                        <div class="separator my-2"></div>
+                                        <div class="menu-item px-5">
+                                            <div class="menu-content px-5">
+                                                <label class="form-check form-switch form-check-custom form-check-solid pulse pulse-success" for="dark_mode_toggle">
+                                                    <input v-on:click="setNight()" v-model="nights" :value="dark" class="form-check-input w-30px h-20px" type="checkbox" id="dark_mode_toggle">
+                                                    <span class="form-check-label text-gray-600 fs-7">夜间模式</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 顶部导航 - 结束 -->
+            <!-- 内容 - 开始 -->
+
+            <div class="content fs-6 d-flex flex-column flex-column-fluid" id="kt_content">
+                <div v-cloak class="post fs-6 d-flex flex-column-fluid" id="kt_post">
+                    <div class="container-xxl" id="genuine">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div id="kt_sidebar_left" class="flex-column flex-md-row-auto w-100 w-lg-250px w-xxl-275px d-none d-lg-block">
+                                <div class="card mb-6 mb-lg-0" data-kt-sticky="true" data-kt-sticky-name="account-settings" data-kt-sticky-offset="{default: false, lg: 300}" data-kt-sticky-width="{lg: '250px', xxl: '275px'}" data-kt-sticky-left="auto" data-kt-sticky-top="90px" data-kt-sticky-zindex="95">
+                                    <div class="card-header px-6" id="kt_sidebar_header">
+                                        <div class="card-title m-0 w-100">
+                                            <a href="/admin/comm/login?url=/admin/theme" class="btn btn-primary btn-sm btn-block">发布主题</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body py-7 px-5">
+                                        <div class="scroll-y pe-3 me-n3 h-auto" data-kt-scroll="true" data-kt-scroll-height="{default: '300px', lg: 'auto'}" data-kt-scroll-dependencies="#kt_header, #kt_subheader, #kt_footer, #kt_sidebar_header" data-kt-scroll-offset="200px">
+                                            <ul id="kt_account_settings" class="nav nav-flush menu menu-column menu-rounded menu-title-gray-600 menu-bullet-gray-300 menu-state-bg menu-state-bullet-primary fw-bold fs-6">
+                                                <li class="menu-item pt-0 pb-1">
+                                                    <a href="/index/themes.html" class="menu-link px-5 py-4 nav-link align-items-start">
+							<span class="menu-bullet mt-3">
+								<span class="bullet"></span>
+							</span>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="menu-title text-gray-800 fw-boldest">主题</span>
+                                                            <span class="menu-content p-0 fs-7 text-gray-400 fw-bold">inis theme</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item pt-0 pb-1">
+                                                    <a href="/index/tutorials.html" class="menu-link px-5 py-4 nav-link align-items-start">
+							<span class="menu-bullet mt-3">
+								<span class="bullet"></span>
+							</span>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="menu-title text-gray-800 fw-boldest">教程</span>
+                                                            <span class="menu-content p-0 fs-7 text-gray-400 fw-bold">来自勤劳的用户分享</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li v-if="false" class="menu-item pt-0 pb-1">
+                                                    <a href="#" class="menu-link px-5 py-4 nav-link align-items-start">
+							<span class="menu-bullet mt-3">
+								<span class="bullet"></span>
+							</span>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="menu-title text-gray-800 fw-boldest">公告</span>
+                                                            <span class="menu-content p-0 fs-7 text-gray-400 fw-bold">inis最新动态</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li v-if="false" class="menu-item pt-0 pb-1">
+                                                    <a href="#" class="menu-link px-5 py-4 nav-link align-items-start">
+							<span class="menu-bullet mt-3">
+								<span class="bullet"></span>
+							</span>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="menu-title text-gray-800 fw-boldest">建议</span>
+                                                            <span class="menu-content p-0 fs-7 text-gray-400 fw-bold">inis最新动态</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item pt-0 pb-1">
+                                                    <a href="/index/genuine.html" class="menu-link px-5 py-4 nav-link align-items-start">
+							<span class="menu-bullet mt-3">
+								<span class="bullet"></span>
+							</span>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="menu-title text-gray-800 fw-boldest">正版查询</span>
+                                                            <span class="menu-content p-0 fs-7 text-gray-400 fw-bold">如有能力，请支持正版</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item pt-0 pb-1">
+                                                    <a onclick="toastr.warning('客官，这个功能还没做呢，请不要着急！')" href="javascript:;" class="menu-link px-5 py-4 nav-link align-items-start">
+							<span class="menu-bullet mt-3">
+								<span class="bullet"></span>
+							</span>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="menu-title text-gray-800 fw-boldest">开发日志</span>
+                                                            <span class="menu-content p-0 fs-7 text-gray-400 fw-bold">每个版本更新的内容</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item pt-0 pb-1">
+                                                    <a href="https://docs.inis.cc/#/other/support" target="_blank" class="menu-link px-5 py-4 nav-link align-items-start">
+							<span class="menu-bullet mt-3">
+								<span class="bullet"></span>
+							</span>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="menu-title text-gray-800 fw-boldest">INIS赞助商</span>
+                                                            <span class="menu-content p-0 fs-7 text-gray-400 fw-bold">inis的唯一赞助商</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item pt-0 pb-1">
+                                                    <a href="https://docs.inis.cc/#/start/install-inis-system" target="_blank" class="menu-link px-5 py-4 nav-link align-items-start">
+							<span class="menu-bullet mt-3">
+								<span class="bullet"></span>
+							</span>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="menu-title text-gray-800 fw-boldest">安装与使用</span>
+                                                            <span class="menu-content p-0 fs-7 text-gray-400 fw-bold">系统、主题、小程序和APP</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-md-row-fluid ms-lg-12">
+                                <div class="card mb-lg-9 mb-5 bgi-no-repeat bgi-position-y-top bgi-size-cover" style="background-image:url('/static/index/image/search-bg.png')">
+                                    <div class="card-body d-flex flex-column flex-center py-10 py-lg-20 min-h-">
+                                        <div class="text-center mb-12">
+                                            <h3 class="fw-boldest fs-2x text-white pb-1">inis正版查询</h3>
+                                            <span class="fw-bold fs-4 text-white">您可以通过域名进行查询是否为正版</span>
+                                        </div>
+                                        <div class="w-xxl-850px d-flex flex-column">
+                                            <div class="rounded d-flex flex-column flex-lg-row align-items-lg-center justify-content-center bg-body p-5 min-h-75px">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="position-relative w-md-400px me-md-2">
+											<span data-bs-toggle="tooltip" title="顶级或多级域名，如：inis.cn或api.inis.cn" class="svg-icon svg-icon-3 svg-icon-gray-500 position-absolute top-50 translate-middle ms-6">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="black"></rect>
+													<path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="black"></path>
+												</svg>
+											</span>
+                                                        <input v-model="search" v-on:keyup.enter="submit()" type="text" class="form-control form-control-solid ps-10" placeholder="域名，如：api.inis.cn">
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <button v-on:click="submit()" type="button" class="btn btn-primary me-5">
+                                                            <span v-if="is_load" class="spinner-border spinner-border-sm align-middle me-2"></span>
+                                                            {{(is_load) ? '查询中' : '查询'}}
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div v-if="is_show" class="card mb-6 mb-xl-9">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            <h2 class="fw-boldest m-0">查询结果</h2>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row gx-9 gy-6">
+                                            <div class="col-xl-6">
+                                                <div class="card card-dashed flex-row flex-stack flex-wrap px-6 py-5 h-100">
+                                                    <div class="d-flex flex-column py-2">
+                                                        <div class="d-flex align-items-center fs-4 fw-boldest mb-3">
+                                                            {{domain.value || '无'}}
+                                                            <span v-if="domain.check" class="badge badge-light-success fs-7 ms-2">已授权</span>
+                                                            <span v-else class="badge badge-light-warning fs-7 ms-2">未授权</span>
+                                                        </div>
+                                                        <div class="fs-4 fw-bold text-gray-600">
+                                                            {{(domain.check) ? '该域名已接入inis授权系统' : '该域名未接入inis授权系统'}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="card card-dashed flex-row flex-stack flex-wrap px-6 py-5 h-100">
+                                                    <div class="d-flex flex-column py-2">
+                                                        <div class="d-flex align-items-center fs-4 fw-boldest mb-3">
+                                                            {{topDomain.value || '无'}}
+                                                            <span v-if="topDomain.check" class="badge badge-light-success fs-7 ms-2">正版</span>
+                                                            <span v-else class="badge badge-light-danger fs-7 ms-2">非正版</span>
+                                                        </div>
+                                                        <div class="fs-4 fw-bold text-gray-600">
+                                                            {{(topDomain.check) ? '查询结果为正版授权，感谢您对inis的支持' : '该域名非正版授权，如有能力，请支持正版'}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-10">
+                                            <h4 class="fw-boldest mb-3">查询记录</h4>
+                                            <div class="fw-bold text-gray-600 fs-4">
+                                                该域名总计查询 {{notes.count || 0}} 次
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 内容 - 结束 -->
+            <!-- 页脚 - 开始 -->
+            <div class="container-xxl">
+                <div id="kt_footer" class="footer py-4 d-flex flex-lg-column">
+                    <div class="container-fluid d-flex flex-column flex-md-row flex-stack">
+                        <div class="text-dark order-2 order-md-1">
+                            <span class="item left bg-dark">2020 - 2022 © Copyright</span>
+                            <span class="item right bg-primary"><a href="https://beian.miit.gov.cn" target="_blank">桂ICP备19006241号-2</a></span>
+                        </div>
+                        <div class="text-dark order-2 order-md-1">
+                            <span class="item left bg-dark"><a href="javascript:;">赞助商</a></span>
+                            <span class="item right bg-primary"><a href="//www.11dun.com.hk" target="_blank">一盾安全</a></span>
+                            <span class="item left bg-dark"><a href="javascript:;">加速服务</a></span>
+                            <span class="item right bg-success"><a href="https://11dun.com/" target="_blank">一盾CDN</a></span>
+                            <span class="item left bg-dark"><a href="//inis.cc" target="_blank">inis</a></span>
+                            <span class="item right bg-warning"><a href="javascript:;">version 1.3.0</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 页脚 - 结束 -->
+        </div>
+    </div>
+</div>
+
+<!-- 其他组件 - 开始 -->
+<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+	<span class="svg-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+			<rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="black"></rect>
+			<path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="black"></path>
+		</svg>
+	</span>
+</div>
+
+<!-- 其他组件 - 结束 -->
+
+<script src="{{__javascripts__}}plugins.bundle.js"></script>
+<script src="{{__javascripts__}}scripts.bundle.js"></script>
+
+<script src="{{__javascripts__}}nav.js"></script>
+<script src="{{__javascripts__}}sidebar.js"></script>
+
+
+<script src="{{__javascripts__}}genuine.js"></script>
+
+</body>
+</html>
