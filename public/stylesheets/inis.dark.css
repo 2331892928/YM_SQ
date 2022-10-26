@@ -1,0 +1,1076 @@
+body[theme=night] {
+    --fc-event-border-color: #00A3FF;
+    --fc-event-bg-color: #00A3FF;
+    --fc-event-text-color: #FFFFFF;
+    color: #fff;
+    background-color: #1c1c2a;
+}
+body[theme=night] .content {
+    background-color: #151521;
+}
+body[theme=night] #kt_header, body[theme=night] .card{
+    background: #1e1e2d;
+}
+body[theme=night] .menu-bullet-gray-300 .menu-item .menu-link .menu-bullet .bullet {
+    background-color: #323248;
+}
+body[theme=night] .menu-state-bullet-primary .menu-item .menu-link:hover:not(.disabled):not(.active), body[theme=night] .menu-state-bullet-primary .menu-item.hover>.menu-link:not(.disabled):not(.active) {
+    transition: color .2s ease,background-color .2s ease;
+}
+body[theme=night] .menu-state-bg .menu-item .menu-link:hover:not(.disabled):not(.active), body[theme=night] .menu-state-bg .menu-item.hover>.menu-link:not(.disabled):not(.active) {
+    transition: color .2s ease,background-color .2s ease;
+    background-color: rgba(27,27,41,.8);
+}
+body[theme=night] .menu-title-gray-600 .menu-item .menu-link {
+    color: #6d6d80;
+}
+body[theme=night] .menu-state-bullet-primary .menu-item .menu-link.active {
+    transition: color .2s ease,background-color .2s ease;
+}
+body[theme=night] .menu-state-bg .menu-item .menu-link.active {
+    transition: color .2s ease,background-color .2s ease;
+    background-color: rgba(27,27,41,.8);
+}
+body[theme=night] .card .card-header {
+    border-bottom: 1px solid #2b2b40;
+}
+body[theme=night] .separator {
+    border-bottom: 1px solid #2b2b40;
+}
+body[theme=night] .form-control {
+    color: #fff;
+    background-color: #1e1e2d;
+    border: 1px solid #323248;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 8%);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+body[theme=night] .btn:not(.btn-shadow):not(.shadow):not(.shadow-sm):not(.shadow-lg) {
+    box-shadow: none!important;
+}
+body[theme=night] .btn-check:active+.btn.btn-active-light-success, body[theme=night] .btn-check:checked+.btn.btn-active-light-success, body[theme=night] .btn.btn-active-light-success.active, body[theme=night] .btn.btn-active-light-success.show, body[theme=night] .btn.btn-active-light-success:active:not(.btn-active), body[theme=night] .btn.btn-active-light-success:focus:not(.btn-active), body[theme=night] .btn.btn-active-light-success:hover:not(.btn-active), body[theme=night] .show>.btn.btn-active-light-success {
+    background-color: #1c3238!important;
+}
+body[theme=night] .btn-check:active+.btn.btn-info, body[theme=night] .btn-check:checked+.btn.btn-info, body[theme=night] .btn.btn-info.active, body[theme=night] .btn.btn-info.show, body[theme=night] .btn.btn-info:active:not(.btn-active), body[theme=night] .btn.btn-info:focus:not(.btn-active), body[theme=night] .btn.btn-info:hover:not(.btn-active), body[theme=night] .show>.btn.btn-info {
+	background-color:#5014d0!important
+}
+body[theme=night] .btn-check:active+.btn.btn-active-light-danger, body[theme=night] .btn-check:checked+.btn.btn-active-light-danger, body[theme=night] .btn.btn-active-light-danger.active, body[theme=night] .btn.btn-active-light-danger.show, body[theme=night] .btn.btn-active-light-danger:active:not(.btn-active), body[theme=night] .btn.btn-active-light-danger:focus:not(.btn-active), body[theme=night] .btn.btn-active-light-danger:hover:not(.btn-active), body[theme=night] .show>.btn.btn-active-light-danger {
+    color: #f1416c;
+    border-color: #3a2434;
+    background-color: #3a2434!important;
+}
+body[theme=night] .btn-check:active+.btn.btn-active-light-primary, body[theme=night]  .btn-check:checked+.btn.btn-active-light-primary, body[theme=night]  .btn.btn-active-light-primary.active, body[theme=night] .btn.btn-active-light-primary.show, body[theme=night] .btn.btn-active-light-primary:active:not(.btn-active), body[theme=night] .btn.btn-active-light-primary:focus:not(.btn-active), body[theme=night] .btn.btn-active-light-primary:hover:not(.btn-active), body[theme=night] .show>.btn.btn-active-light-primary {
+    color: #00a3ff;
+    border-color: #212e48;
+    background-color: #212e48!important;
+}
+body[theme=night] .menu-sub-dropdown {
+    background-color: #1e1e2d;
+    box-shadow: 0 0 30px rgb(0 0 0 / 30%);
+}
+body[theme=night] .form-control.form-control-flush {
+    border: 0;
+    background-color: transparent;
+    outline: 0!important;
+    box-shadow: none;
+    border-radius: 0;
+}
+body[theme=night] .btn.btn-light-primary {
+    color: #00a3ff;
+    border-color: #212e48;
+    background-color: #212e48;
+}
+body[theme=night] .separator {
+    border-bottom: 1px solid #2b2b40;
+}
+body[theme=night] .border-gray-200 {
+    border-color: #2b2b40!important;
+}
+body[theme=night] .bg-state-opacity-50 .active, body[theme=night]  .bg-state-opacity-50:hover {
+    background-color: rgba(var(--bg-color),.5)!important;
+}
+body[theme=night] .bg-state-light.active, body[theme=night]  .bg-state-light:hover {
+    --bg-color: 27,27,41;
+    background-color: #1b1b29!important;
+}
+body[theme=night] .badge-white {
+	color:#6d6d80;
+	background-color:#fff
+}
+body[theme=night] .badge-light-white {
+	color:#fff
+}
+body[theme=night] .badge-light {
+	color:#cdcdde;
+	background-color:#1b1b29
+}
+body[theme=night] .badge-light-light {
+	color:#1b1b29
+}
+body[theme=night] .badge-primary {
+	color:#fff;
+	background-color:#00a3ff
+}
+body[theme=night] .badge-light-primary {
+	color:#00a3ff;
+	background-color:#212e48
+}
+body[theme=night] .badge-secondary {
+	color:#cdcdde;
+	background-color:#323248
+}
+body[theme=night] .badge-light-secondary {
+	color:#323248
+}
+body[theme=night] .badge-success {
+	color:#fff;
+	background-color:#50cd89
+}
+body[theme=night] .badge-light-success {
+	color:#50cd89;
+	background-color:#1c3238
+}
+body[theme=night] .badge-info {
+	color:#fff;
+	background-color:#7239ea
+}
+body[theme=night] .badge-light-info {
+	color:#7239ea;
+	background-color:#2f264f
+}
+body[theme=night] .badge-warning {
+	color:#fff;
+	background-color:#ffc700
+}
+body[theme=night] .badge-light-warning {
+	color:#ffc700;
+	background-color:#392f28
+}
+body[theme=night] .badge-danger {
+	color:#fff;
+	background-color:#f1416c
+}
+body[theme=night] .badge-light-danger {
+	color:#f1416c;
+	background-color:#3a2434
+}
+body[theme=night] .badge-dark {
+	color:#1b1b29;
+	background-color:#fff
+}
+body[theme=night] .badge-light-dark {
+	color:#fff;
+	background-color:#2b2b40
+}
+body[theme=night] .menu-gray-100 .menu-item .menu-link {
+	color:#1b1b29
+}
+body[theme=night] .menu-gray-100 .menu-item .menu-link .menu-title {
+	color:#1b1b29
+}
+body[theme=night] .menu-gray-100 .menu-item .menu-link .menu-icon i {
+	color:#1b1b29
+}
+body[theme=night] .menu-gray-100 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#1b1b29
+}
+body[theme=night] .menu-gray-100 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-gray-100 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#1b1b29
+}
+body[theme=night] .menu-gray-100 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%231b1b29'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%231b1b29'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-title-gray-100 .menu-item .menu-link {
+	color:#1b1b29
+}
+body[theme=night] .menu-title-gray-100 .menu-item .menu-link .menu-title {
+	color:#1b1b29
+}
+body[theme=night] .menu-icon-gray-100 .menu-item .menu-link .menu-icon i {
+	color:#1b1b29
+}
+body[theme=night] .menu-icon-gray-100 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#1b1b29
+}
+body[theme=night] .menu-icon-gray-100 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-bullet-gray-100 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#1b1b29
+}
+body[theme=night] .menu-arrow-gray-100 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%231b1b29'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%231b1b29'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-gray-200 .menu-item .menu-link {
+	color:#2b2b40
+}
+body[theme=night] .menu-gray-200 .menu-item .menu-link .menu-title {
+	color:#2b2b40
+}
+body[theme=night] .menu-gray-200 .menu-item .menu-link .menu-icon i {
+	color:#2b2b40
+}
+body[theme=night] .menu-gray-200 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#2b2b40
+}
+body[theme=night] .menu-gray-200 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-gray-200 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#2b2b40
+}
+body[theme=night] .menu-gray-200 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%232B2B40'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%232B2B40'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-title-gray-200 .menu-item .menu-link {
+	color:#2b2b40
+}
+body[theme=night] .menu-title-gray-200 .menu-item .menu-link .menu-title {
+	color:#2b2b40
+}
+body[theme=night] .menu-icon-gray-200 .menu-item .menu-link .menu-icon i {
+	color:#2b2b40
+}
+body[theme=night] .menu-icon-gray-200 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#2b2b40
+}
+body[theme=night] .menu-icon-gray-200 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-bullet-gray-200 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#2b2b40
+}
+body[theme=night] .menu-arrow-gray-200 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%232B2B40'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%232B2B40'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-gray-300 .menu-item .menu-link {
+	color:#323248
+}
+body[theme=night] .menu-gray-300 .menu-item .menu-link .menu-title {
+	color:#323248
+}
+body[theme=night] .menu-gray-300 .menu-item .menu-link .menu-icon i {
+	color:#323248
+}
+body[theme=night] .menu-gray-300 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#323248
+}
+body[theme=night] .menu-gray-300 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-gray-300 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#323248
+}
+body[theme=night] .menu-gray-300 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23323248'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23323248'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-title-gray-300 .menu-item .menu-link {
+	color:#323248
+}
+body[theme=night] .menu-title-gray-300 .menu-item .menu-link .menu-title {
+	color:#323248
+}
+body[theme=night] .menu-icon-gray-300 .menu-item .menu-link .menu-icon i {
+	color:#323248
+}
+body[theme=night] .menu-icon-gray-300 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#323248
+}
+body[theme=night] .menu-icon-gray-300 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-bullet-gray-300 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#323248
+}
+body[theme=night] .menu-arrow-gray-300 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23323248'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23323248'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-gray-400 .menu-item .menu-link {
+	color:#474761
+}
+body[theme=night] .menu-gray-400 .menu-item .menu-link .menu-title {
+	color:#474761
+}
+body[theme=night] .menu-gray-400 .menu-item .menu-link .menu-icon i {
+	color:#474761
+}
+body[theme=night] .menu-gray-400 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#474761
+}
+body[theme=night] .menu-gray-400 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-gray-400 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#474761
+}
+body[theme=night] .menu-gray-400 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23474761'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23474761'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-title-gray-400 .menu-item .menu-link {
+	color:#474761
+}
+body[theme=night] .menu-title-gray-400 .menu-item .menu-link .menu-title {
+	color:#474761
+}
+body[theme=night] .menu-icon-gray-400 .menu-item .menu-link .menu-icon i {
+	color:#474761
+}
+body[theme=night] .menu-icon-gray-400 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#474761
+}
+body[theme=night] .menu-icon-gray-400 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-bullet-gray-400 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#474761
+}
+body[theme=night] .menu-arrow-gray-400 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23474761'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23474761'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-gray-500 .menu-item .menu-link {
+	color:#565674
+}
+body[theme=night] .menu-gray-500 .menu-item .menu-link .menu-title {
+	color:#565674
+}
+body[theme=night] .menu-gray-500 .menu-item .menu-link .menu-icon i {
+	color:#565674
+}
+body[theme=night] .menu-gray-500 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#565674
+}
+body[theme=night] .menu-gray-500 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-gray-500 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#565674
+}
+body[theme=night] .menu-gray-500 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23565674'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23565674'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-title-gray-500 .menu-item .menu-link {
+	color:#565674
+}
+body[theme=night] .menu-title-gray-500 .menu-item .menu-link .menu-title {
+	color:#565674
+}
+body[theme=night] .menu-icon-gray-500 .menu-item .menu-link .menu-icon i {
+	color:#565674
+}
+body[theme=night] .menu-icon-gray-500 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#565674
+}
+body[theme=night] .menu-icon-gray-500 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-bullet-gray-500 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#565674
+}
+body[theme=night] .menu-arrow-gray-500 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23565674'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23565674'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-gray-600 .menu-item .menu-link {
+	color:#6d6d80
+}
+body[theme=night] .menu-gray-600 .menu-item .menu-link .menu-title {
+	color:#6d6d80
+}
+body[theme=night] .menu-gray-600 .menu-item .menu-link .menu-icon i {
+	color:#6d6d80
+}
+body[theme=night] .menu-gray-600 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#6d6d80
+}
+body[theme=night] .menu-gray-600 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-gray-600 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#6d6d80
+}
+body[theme=night] .menu-gray-600 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%236D6D80'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%236D6D80'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-title-gray-600 .menu-item .menu-link {
+	color:#6d6d80
+}
+body[theme=night] .menu-title-gray-600 .menu-item .menu-link .menu-title {
+	color:#6d6d80
+}
+body[theme=night] .menu-icon-gray-600 .menu-item .menu-link .menu-icon i {
+	color:#6d6d80
+}
+body[theme=night] .menu-icon-gray-600 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#6d6d80
+}
+body[theme=night] .menu-icon-gray-600 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-bullet-gray-600 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#6d6d80
+}
+body[theme=night] .menu-arrow-gray-600 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%236D6D80'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%236D6D80'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-gray-700 .menu-item .menu-link {
+	color:#92929f
+}
+body[theme=night] .menu-gray-700 .menu-item .menu-link .menu-title {
+	color:#92929f
+}
+body[theme=night] .menu-gray-700 .menu-item .menu-link .menu-icon i {
+	color:#92929f
+}
+body[theme=night] .menu-gray-700 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#92929f
+}
+body[theme=night] .menu-gray-700 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-gray-700 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#92929f
+}
+body[theme=night] .menu-gray-700 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%2392929F'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%2392929F'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-title-gray-700 .menu-item .menu-link {
+	color:#92929f
+}
+body[theme=night] .menu-title-gray-700 .menu-item .menu-link .menu-title {
+	color:#92929f
+}
+body[theme=night] .menu-icon-gray-700 .menu-item .menu-link .menu-icon i {
+	color:#92929f
+}
+body[theme=night] .menu-icon-gray-700 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#92929f
+}
+body[theme=night] .menu-icon-gray-700 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-bullet-gray-700 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#92929f
+}
+body[theme=night] .menu-arrow-gray-700 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%2392929F'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%2392929F'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-gray-800 .menu-item .menu-link {
+	color:#cdcdde
+}
+body[theme=night] .menu-gray-800 .menu-item .menu-link .menu-title {
+	color:#cdcdde
+}
+body[theme=night] .menu-gray-800 .menu-item .menu-link .menu-icon i {
+	color:#cdcdde
+}
+body[theme=night] .menu-gray-800 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#cdcdde
+}
+body[theme=night] .menu-gray-800 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-gray-800 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#cdcdde
+}
+body[theme=night] .menu-gray-800 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23CDCDDE'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23CDCDDE'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-title-gray-800 .menu-item .menu-link {
+	color:#cdcdde
+}
+body[theme=night] .menu-title-gray-800 .menu-item .menu-link .menu-title {
+	color:#cdcdde
+}
+body[theme=night] .menu-icon-gray-800 .menu-item .menu-link .menu-icon i {
+	color:#cdcdde
+}
+body[theme=night] .menu-icon-gray-800 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#cdcdde
+}
+body[theme=night] .menu-icon-gray-800 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-bullet-gray-800 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#cdcdde
+}
+body[theme=night] .menu-arrow-gray-800 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23CDCDDE'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23CDCDDE'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-gray-900 .menu-item .menu-link {
+	color:#fff
+}
+body[theme=night] .menu-gray-900 .menu-item .menu-link .menu-title {
+	color:#fff
+}
+body[theme=night] .menu-gray-900 .menu-item .menu-link .menu-icon i {
+	color:#fff
+}
+body[theme=night] .menu-gray-900 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#fff
+}
+body[theme=night] .menu-gray-900 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-gray-900 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#fff
+}
+body[theme=night] .menu-gray-900 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .menu-title-gray-900 .menu-item .menu-link {
+	color:#fff
+}
+body[theme=night] .menu-title-gray-900 .menu-item .menu-link .menu-title {
+	color:#fff
+}
+body[theme=night] .menu-icon-gray-900 .menu-item .menu-link .menu-icon i {
+	color:#fff
+}
+body[theme=night] .menu-icon-gray-900 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#fff
+}
+body[theme=night] .menu-icon-gray-900 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .menu-bullet-gray-900 .menu-item .menu-link .menu-bullet .bullet {
+	background-color:#fff
+}
+body[theme=night] .menu-arrow-gray-900 .menu-item .menu-link .menu-arrow:after {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.06463 4.42111C1.96161 4.22088 1.9809 3.9637 2.12863 3.78597L5.12847 0.177181C5.31402 -0.046034 5.63049 -0.060261 5.83532 0.145404C6.04015 0.351069 6.05578 0.698744 5.87023 0.921959L3.19406 4.14137L5.84414 7.06417C6.03896 7.27904 6.03835 7.62686 5.84278 7.84105C5.64721 8.05524 5.33073 8.05469 5.13591 7.83982L2.14806 4.54449C2.1141 4.50704 2.08629 4.46541 2.06463 4.42111Z'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:transparent;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e")
+}
+body[theme=night] .form-switch.form-check-solid .form-check-input {
+	height:2.25rem;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23565674'/%3e%3c/svg%3e");
+	border-radius:3.25rem;
+	border: 0;
+    background-color: #2b2b40;
+}
+body[theme=night] .form-switch.form-check-solid .form-check-input:checked {
+	filter:none;
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23FFFFFF'/%3e%3c/svg%3e");
+	background-color:#00a3ff;
+}
+body[theme=night] .fw-boldest {
+    font-weight: 700!important;
+}
+body[theme=night] .text-gray-800 {
+    color: #cdcdde!important;
+}
+body[theme=night] .text-hover-primary {
+    transition: color .2s ease,background-color .2s ease;
+}
+body[theme=night] .text-hover-primary:hover {
+    transition: color .2s ease,background-color .2s ease;
+    color: #00a3ff!important;
+}
+body[theme=night] .bg-body {
+    --bg-color: 30,30,45;
+    background-color: #1e1e2d!important;
+}
+body[theme=night] .form-control.form-control-solid {
+    background-color: #1b1b29;
+    border-color: #1b1b29;
+    color: #92929f;
+}
+body[theme=night] .card.card-dashed {
+    box-shadow: none;
+    border: 1px dashed #323248;
+}
+body[theme=night] .h1, body[theme=night] .h2, body[theme=night] .h3, body[theme=night] .h4, body[theme=night] .h5, body[theme=night] .h6, body[theme=night] h1, body[theme=night] h2, body[theme=night] h3, body[theme=night] h4, body[theme=night] h5, body[theme=night] h6 {
+    color: #fff;
+}
+body[theme=night] .btn-check:active+.btn.btn-light-primary, body[theme=night] .btn-check:checked+.btn.btn-light-primary, body[theme=night] .btn.btn-light-primary.active, body[theme=night] .btn.btn-light-primary.show, body[theme=night] .btn.btn-light-primary:active:not(.btn-active), body[theme=night] .btn.btn-light-primary:focus:not(.btn-active), body[theme=night] .btn.btn-light-primary:hover:not(.btn-active), body[theme=night] .show>.btn.btn-light-primary {
+    color: #fff;
+    border-color: #00a3ff;
+    background-color: #00a3ff!important;
+}
+body[theme=night] .border-top {
+    border-top: 1px solid #2b2b40!important;
+}
+body[theme=night] .border-dashed {
+    border-style: dashed!important;
+    border-color: #323248;
+}
+body[theme=night] .border-gray-300 {
+    border-color: #323248!important;
+}
+body[theme=night] .notice.border-primary {
+    border-color: rgba(0,163,255,.5)!important;
+}
+body[theme=night] .border-dashed {
+    border-style: dashed!important;
+    border-color: #323248;
+}
+body[theme=night] .bg-light-primary {
+    background-color: #212e48!important;
+}
+body[theme=night] .border-primary {
+    border-color: #00a3ff!important;
+}
+body[theme=night] .border {
+    border: 1px solid #2b2b40!important;
+}
+body[theme=night] .text-gray-900 {
+    color: #fff!important;
+}
+body[theme=night] .btn.btn-light {
+    color: #cdcdde;
+    border-color: #1b1b29;
+    background-color: #1b1b29;
+}
+body[theme=night] .btn.btn-light {
+	color:#cdcdde;
+	border-color:#1b1b29;
+	background-color:#1b1b29
+}
+body[theme=night] .btn.btn-light i {
+	color:#cdcdde
+}
+body[theme=night] .btn.btn-light .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#cdcdde
+}
+body[theme=night] .btn.btn-light .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .btn.btn-light.dropdown-toggle:after {
+	color:#cdcdde
+}
+body[theme=night] .btn-check:active+.btn.btn-light, body[theme=night] .btn-check:checked+.btn.btn-light, body[theme=night] .btn.btn-light.active, body[theme=night] .btn.btn-light.show, body[theme=night] .btn.btn-light:active:not(.btn-active), body[theme=night] .btn.btn-light:focus:not(.btn-active), body[theme=night] .btn.btn-light:hover:not(.btn-active), body[theme=night] .show>.btn.btn-light {
+	color:#cdcdde;
+	border-color:#323248;
+	background-color:#323248!important
+}
+body[theme=night] .btn-check:active+.btn.btn-light i, body[theme=night] .btn-check:checked+.btn.btn-light i, body[theme=night] .btn.btn-light.active i, body[theme=night] .btn.btn-light.show i, body[theme=night] .btn.btn-light:active:not(.btn-active) i, body[theme=night] .btn.btn-light:focus:not(.btn-active) i, body[theme=night] .btn.btn-light:hover:not(.btn-active) i, body[theme=night] .show>.btn.btn-light i {
+	color:#cdcdde
+}
+body[theme=night] .btn-check:active+.btn.btn-light .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn-check:checked+.btn.btn-light .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-light.active .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-light.show .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-light:active:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-light:focus:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-light:hover:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .show>.btn.btn-light .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#cdcdde
+}
+body[theme=night] .btn-check:active+.btn.btn-light .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn-check:checked+.btn.btn-light .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-light.active .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-light.show .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-light:active:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-light:focus:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-light:hover:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .show>.btn.btn-light .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .btn-check:active+.btn.btn-light.dropdown-toggle:after, body[theme=night] .btn-check:checked+.btn.btn-light.dropdown-toggle:after, body[theme=night] .btn.btn-light.active.dropdown-toggle:after, body[theme=night] .btn.btn-light.show.dropdown-toggle:after, body[theme=night] .btn.btn-light:active:not(.btn-active).dropdown-toggle:after, body[theme=night] .btn.btn-light:focus:not(.btn-active).dropdown-toggle:after, body[theme=night] .btn.btn-light:hover:not(.btn-active).dropdown-toggle:after, body[theme=night] .show>.btn.btn-light.dropdown-toggle:after {
+	color:#cdcdde
+}
+body[theme=night] .btn.btn-bg-light {
+	border-color:#1b1b29;
+	background-color:#1b1b29
+}
+body[theme=night] .btn-check:active+.btn.btn-active-light, body[theme=night] .btn-check:checked+.btn.btn-active-light, body[theme=night] .btn.btn-active-light.active, body[theme=night] .btn.btn-active-light.show, body[theme=night] .btn.btn-active-light:active:not(.btn-active), body[theme=night] .btn.btn-active-light:focus:not(.btn-active), body[theme=night] .btn.btn-active-light:hover:not(.btn-active), body[theme=night] .show>.btn.btn-active-light {
+	color:#cdcdde;
+	border-color:#1b1b29;
+	background-color:#1b1b29!important
+}
+body[theme=night] .btn-check:active+.btn.btn-active-light i, body[theme=night] .btn-check:checked+.btn.btn-active-light i, body[theme=night] .btn.btn-active-light.active i, body[theme=night] .btn.btn-active-light.show i, body[theme=night] .btn.btn-active-light:active:not(.btn-active) i, body[theme=night] .btn.btn-active-light:focus:not(.btn-active) i, body[theme=night] .btn.btn-active-light:hover:not(.btn-active) i, body[theme=night] .show>.btn.btn-active-light i {
+	color:#cdcdde
+}
+body[theme=night] .btn-check:active+.btn.btn-active-light .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn-check:checked+.btn.btn-active-light .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-active-light.active .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-active-light.show .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-active-light:active:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-active-light:focus:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-active-light:hover:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), body[theme=night] .show>.btn.btn-active-light .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease;
+	fill:#cdcdde
+}
+body[theme=night] .btn-check:active+.btn.btn-active-light .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn-check:checked+.btn.btn-active-light .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-active-light.active .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-active-light.show .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-active-light:active:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-active-light:focus:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .btn.btn-active-light:hover:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), body[theme=night] .show>.btn.btn-active-light .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition:fill .3s ease
+}
+body[theme=night] .btn-check:active+.btn.btn-active-light.dropdown-toggle:after, body[theme=night] .btn-check:checked+.btn.btn-active-light.dropdown-toggle:after, body[theme=night] .btn.btn-active-light.active.dropdown-toggle:after, body[theme=night] .btn.btn-active-light.show.dropdown-toggle:after, body[theme=night] .btn.btn-active-light:active:not(.btn-active).dropdown-toggle:after, body[theme=night] .btn.btn-active-light:focus:not(.btn-active).dropdown-toggle:after, body[theme=night] .btn.btn-active-light:hover:not(.btn-active).dropdown-toggle:after, body[theme=night] .show>.btn.btn-active-light.dropdown-toggle:after {
+	color:#cdcdde
+}
+body[theme=night] .text-dark {
+    color: #fff!important;
+}
+body[theme=night] .nav-tabs .nav-link:focus, body[theme=night] .nav-tabs .nav-link:hover {
+    border-color: #2b2b40 #2b2b40 #2b2b40;
+    isolation: isolate;
+}
+body[theme=night] .nav-tabs {
+    border-bottom: 1px solid #2b2b40;
+}
+body[theme=night] .nav-tabs .nav-item.show .nav-link, body[theme=night] .nav-tabs .nav-link.active {
+    color: #92929f;
+    background-color: #1e1e2d;
+    border-color: #323248 #323248 #1e1e2d;
+}
+body[theme=night] .aside.aside-default {
+    box-shadow: none;
+    background-color: #1c1c2a;
+}
+body[theme=night] .text-gray-400 {
+    color: #474761!important;
+}
+body[theme=night] .text-gray-700 {
+    color: #92929f!important;
+}
+body[theme=night] .text-muted {
+    color: #565674!important;
+}
+body[theme=night] .svg-icon svg [fill]:not(.permanent):not(g) {
+    transition: fill .3s ease;
+    fill: #565674;
+}
+body[theme=night] .svg-icon.svg-icon-primary svg [fill]:not(.permanent):not(g) {
+    transition: fill .3s ease;
+    fill: #00a3ff;
+}
+body[theme=night] .text-gray-600 {
+    color: #6d6d80!important;
+}
+body[theme=night] .popover .popover-header {
+	font-size:1rem;
+	font-weight:500;
+	border-bottom:1px solid #323248
+}
+body[theme=night] .popover .popover-dismiss {
+	position:absolute;
+	top:.85rem;
+	right:.85rem;
+	height:1.5rem;
+	width:1.5rem
+}
+body[theme=night] .popover .popover-dismiss i {
+	color:#565674
+}
+body[theme=night] .popover .popover-dismiss:hover i {
+	color:#00a3ff
+}
+body[theme=night] .popover .popover-dismiss+.popover-header {
+	padding-right:2.75rem
+}
+body[theme=night] .popover-dark {
+	background-color:#fff;
+	border:0
+}
+body[theme=night] .popover-dark .popover-header {
+	background-color:#fff;
+	color:#2b2b40;
+	border-bottom-color:#cdcdde
+}
+body[theme=night] .popover-dark .popover-body {
+	color:#474761
+}
+body[theme=night] .popover-dark.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::before, body[theme=night] .popover-dark.bs-popover-top>.popover-arrow::before {
+	border-top-color:#1b1b29
+}
+body[theme=night] .popover-dark.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::after, body[theme=night] .popover-dark.bs-popover-top>.popover-arrow::after {
+	border-top-color:#fff
+}
+body[theme=night] .popover-dark.bs-popover-auto[data-popper-placement^=right]>.popover-arrow::before, body[theme=night] .popover-dark.bs-popover-end>.popover-arrow::before {
+	border-right-color:#1b1b29
+}
+body[theme=night] .popover-dark.bs-popover-auto[data-popper-placement^=right]>.popover-arrow::after, body[theme=night] .popover-dark.bs-popover-end>.popover-arrow::after {
+	border-right-color:#fff
+}
+body[theme=night] .popover-dark.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::before, body[theme=night] .popover-dark.bs-popover-bottom>.popover-arrow::before {
+	border-bottom-color:#1b1b29
+}
+body[theme=night] .popover-dark.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after, body[theme=night] .popover-dark.bs-popover-bottom>.popover-arrow::after {
+	border-bottom-color:#fff
+}
+body[theme=night] .popover-dark.bs-popover-auto[data-popper-placement^=bottom] .popover-header::before, body[theme=night] .popover-dark.bs-popover-bottom .popover-header::before {
+	border-bottom-color:#fff
+}
+body[theme=night] .popover-dark.bs-popover-auto[data-popper-placement^=left]>.popover-arrow::before, body[theme=night] .popover-dark.bs-popover-start>.popover-arrow::before {
+	border-left-color:#1b1b29
+}
+body[theme=night] .popover-dark.bs-popover-auto[data-popper-placement^=left]>.popover-arrow::after, body[theme=night] .popover-dark.bs-popover-start>.popover-arrow::after {
+	border-left-color:#fff
+}
+body[theme=night] .tooltip .tooltip-inner {
+	box-shadow:0 0 30px rgba(0,0,0,.3)!important
+}
+body[theme=night] .tooltip.tooltop-auto-width .tooltip-inner {
+	white-space:nowrap;
+	max-width:none
+}
+body[theme=night] .tooltip.tooltip-dark .tooltip-inner {
+	color:#1b1b29;
+	background-color:#fff
+}
+body[theme=night] .tooltip.tooltip-dark.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, body[theme=night] .tooltip.tooltip-dark.bs-tooltip-top .tooltip-arrow::before {
+	border-top-color:#fff
+}
+body[theme=night] .tooltip.tooltip-dark.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before, body[theme=night] .tooltip.tooltip-dark.bs-tooltip-end .tooltip-arrow::before {
+	border-right-color:#fff
+}
+body[theme=night] .tooltip.tooltip-dark.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, body[theme=night] .tooltip.tooltip-dark.bs-tooltip-bottom .tooltip-arrow::before {
+	border-bottom-color:#fff
+}
+body[theme=night] .tooltip.tooltip-dark.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before, body[theme=night] .tooltip.tooltip-dark.bs-tooltip-start .tooltip-arrow::before {
+	border-left-color:#fff
+}
+body[theme=night] .form-select.form-select-solid {
+    background-color: #1b1b29;
+    border-color: #1b1b29;
+    color: #92929f;
+    transition: color .2s ease,background-color .2s ease;
+}
+body[theme=night] .dropdown.show>.form-select.form-select-solid, body[theme=night] .form-select.form-select-solid.active, body[theme=night] .form-select.form-select-solid.focus, body[theme=night] .form-select.form-select-solid:active, body[theme=night] .form-select.form-select-solid:focus {
+    background-color: #171723;
+    border-color: #171723!important;
+    color: #92929f;
+    transition: color .2s ease,background-color .2s ease;
+}
+body[theme=night] .select2-container--bootstrap5 .select2-dropdown {
+    border: 0;
+    box-shadow: 0 0 30px rgb(0 0 0 / 30%);
+    border-radius: 0.475rem;
+    padding: 1rem 0;
+    background-color: #1e1e2d;
+}
+body[theme=night] .select2-container--bootstrap5 .select2-dropdown .select2-results__option.select2-results__option--highlighted {
+    background-color: #212e48;
+    color: #00a3ff;
+    transition: color .2s ease,background-color .2s ease;
+}
+body[theme=night] .card .card-footer {
+    background-color: transparent;
+    border-top: 1px solid #2b2b40;
+}
+body[theme=night] input:-ms-input-placeholder {
+    color: #565674!important;
+}
+
+body[theme=night] input::-webkit-input-placeholder {
+    color: #565674!important;
+}
+
+body[theme=night] input::-moz-placeholder {
+    color: #565674!important;
+}
+
+body[theme=night] input:-moz-placeholder {
+    color: #565674!important;
+}
+body[theme=night] .table.table-row-dashed tr {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #2b2b40;
+}
+body[theme=night] div::-webkit-scrollbar-thumb, body[theme=night] ol::-webkit-scrollbar-thumb, body[theme=night] pre::-webkit-scrollbar-thumb, body[theme=night] span::-webkit-scrollbar-thumb, body[theme=night] ul::-webkit-scrollbar-thumb {
+    background-color: #2b2b40;
+}
+body[theme=night] .form-check.form-check-solid .form-check-input {
+    border: 0;
+    background-color: #2b2b40;
+}
+body[theme=night] .page-item.next:not(:hover):not(:focus):not(.disabled) .page-link, body[theme=night] .page-item.previous:not(:hover):not(:focus):not(.disabled) .page-link {
+    background-color: #1e1e2d;
+}
+body[theme=night] .page-link:hover {
+    color: #00a3ff;
+    background-color: #212e48;
+    border-color: transparent;
+}
+body[theme=night] .modal-content {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+}
+body[theme=night] .modal-content {
+    background-color: #1e1e2d;
+    border: 0 solid rgba(0,0,0,.2);
+    box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 10%);
+}
+body[theme=night] .modal-header{
+    border-bottom: 1px solid #2b2b40;
+}
+body[theme=night] .modal-footer{
+    border-top: 1px solid #2b2b40;
+}
+body[theme=night] .vditor-toolbar {
+    background-color: #151521;
+}
+body[theme=night] .vditor{
+    border:unset;
+    --panel-background-color: #151521;
+}
+body[theme=night] .vditor-toolbar {
+    border:unset;
+}
+body[theme=night] .vditor-resize>div{
+    background-color:#2b2b40;
+}
+body[theme=night] .vditor-ir pre.vditor-reset:focus{
+    background-color: #1c1c2a;
+}
+body[theme=night] .card {
+    border: 0;
+    box-shadow: none;
+}
+body[theme=night] .timeline .timeline-line {
+    border-left-color: #323248;
+}
+body[theme=night] .customize-input{
+    border:unset;
+    border-radius: 0;
+    border-bottom: 1px solid #2b2b40!important;
+}
+body[theme=night] .customize-input:hover, body[theme=night] .customize-input:focus, body[theme=night] .customize-textarea:hover, body[theme=night] .customize-textarea:focus {
+    border-bottom: 2px solid #2b2b40!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
