@@ -53,7 +53,7 @@ class Index{
         $params = $request->params();
         switch($params[1]){
             case "genuine":
-                $request->send(json_encode(['测试程序'=>1]));
+                $request->send(json_encode(['code'=>200,'msg'=>"ok",'data'=>['测试程序'=>1]]));
         }
     }
 }
