@@ -60,9 +60,9 @@
                     if (res.data.code == 200) {
 
                         this.programList = res.data.data
-
+                        console.log(this.programList)
                     } else toastr.error(res.data.msg);
-                    console.log(this.programList)
+
                 })
             },
 
