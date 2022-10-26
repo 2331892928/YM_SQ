@@ -13,6 +13,17 @@
 //如果是局部引入，使用前引入即可
 class Index{
     public function start(YM_request $request){
+        $request_type = $request->requestType();
+        switch($request_type){
+            case "POST":
+                $this->post($request);
+            case "GET":
+            default:
+                $this->get($request);
+        }
+        //更多帮助请查看：https://ym-php.rkru.cn
+    }
+    public function get(YM_request $request){
         $params = $request->params();
         if(count($params)==1){
             $request->render(__views__."/index/index.html");
@@ -22,6 +33,16 @@ class Index{
             $request->render(__views__."/index/".$params[1]);
             return;
         }
-        //更多帮助请查看：https://ym-php.rkru.cn
+    }
+    public function post(YM_request $request){
+        $params = $request->params();
+        if(count($params)==1){
+            $request->send(json_encode(['code'=>400,"msg"=>"路由不对"]));
+            return;
+        }
+        switch($params[1]){
+            case "genuine":
+                $request->send('{"code":200,"msg":"ok","data":{"domain":{"value":"qq.com","check":false},"topDomain":{"value":"qq.com","check":false},"notes":{"id":119,"domain":"qq.com","code":403,"count":13,"opt":null,"expand":null,"longtext":null,"create_time":"2022-01-28 15:28:02","update_time":"2022-10-26 16:55:57"}}}');
+        }
     }
 }
