@@ -62,7 +62,7 @@
                         this.programList = res.data.data
 
                     } else toastr.error(res.data.msg);
-
+                    console.log(this.programList)
                 })
             },
 
