@@ -541,15 +541,17 @@
                                             <span class="fw-bold fs-4 text-white">您可以通过域名进行查询是否为正版</span>
                                         </div>
                                         <div class="w-xxl-850px d-flex flex-column">
-<!--                                            <div class="layui-form-item">-->
-<!--                                                <label>-->
-<!--                                                    <select name="proid" class="layui-input" style="width: 100%;">-->
-<!--                                                        <option v-for="(val,key) in programList" value="{{val}}">{{key}}</option>-->
-<!--                                                    </select>-->
-<!--                                                </label>-->
-<!--                                            </div>-->
-                                        </div>
-<!--                                            <br>-->
+                                            <div class="rounded d-flex flex-column flex-lg-row align-items-lg-center justify-content-center bg-body p-5 min-h-75px">
+                                                <div class="layui-unselect layui-form-select">
+                                                    <div class="layui-select-title">
+                                                        <input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect" name="">
+                                                        <i class="layui-edge"></i></div>
+                                                    <dl class="layui-anim layui-anim-upbit" style="">
+                                                        <dd lay-value="{{val}}" class="layui-this" v-for="(val,key) in programList">{{key}}</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            </br>
                                             <div class="rounded d-flex flex-column flex-lg-row align-items-lg-center justify-content-center bg-body p-5 min-h-75px">
                                                 <div class="d-flex align-items-center">
                                                     <div class="position-relative w-md-400px me-md-2">
