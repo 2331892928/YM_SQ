@@ -6,7 +6,7 @@
  */-->
 
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover">
@@ -545,7 +545,7 @@
                                                 <div class="layui-form-item">
                                                     <label>
                                                         <select name="proid" class="layui-input" style="width: 100%;" v-for="(val,key,i) in programList">
-                                                            <option value={{val}}>{{key}} {{val}}</option>
+                                                            <option v-bind:value="{{val}}">{{key}}</option>
                                                         </select>
                                                     </label>
                                                 </div>
