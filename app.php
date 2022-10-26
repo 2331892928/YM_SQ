@@ -49,7 +49,7 @@ $waf->run();
 //waf结束
 //路由,从小至大，如果根路由在最上边，且不严格，第二个路由是/admin的话，浏览器输入/admin将会被定义到跟路由
 App::use('/',__routes__.'/index/index.php');//严格示例，只能/到达路由，一般做接口
-App::use('/index',__routes__.'/index/index.php',false);//严格示例，只能/到达路由，一般做接口
+App::use('/index',__routes__.'/index/index.php',false);
 App::use('/user',__routes__.'/index/index.php',false);
 //不严格示例，可以到达/users/xxx 路由xxx为泛，可以/users/index.html,/users/login.html,/users/index/login,通过内部$request->params()获取params参数
 
