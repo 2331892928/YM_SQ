@@ -15,10 +15,11 @@
                 topDomain: {},
                 is_show: false,     // 显示
                 is_load: false,     // 加载中
+                programList: {},
             }
         },
         mounted() {
-
+            this.program()
         },
         methods: {
 
@@ -52,6 +53,17 @@
                         this.is_load = false
                     })
                 }
+            },
+            program(){
+                axios.get('/index/genuine').then(res=>{
+
+                    if (res.data.code == 200) {
+
+                        this.programList = res.data.data
+
+                    } else toastr.error(res.data.msg);
+
+                })
             },
 
             // 时间戳转人性化时间
