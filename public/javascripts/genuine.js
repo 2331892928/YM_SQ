@@ -55,7 +55,7 @@
                 }
             },
             program(){
-                axios.get('/index/genuine').then(res=>{
+                axios.put('/index/genuine').then(res=>{
 
                     if (res.data.code == 200) {
 

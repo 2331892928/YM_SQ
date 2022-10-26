@@ -18,6 +18,9 @@ class Index{
             case "POST":
                 $this->post($request);
                 break;
+            case "PUT":
+                $this->put($request);
+                break;
             case "GET":
             default:
                 $this->get($request);
