@@ -17,6 +17,7 @@ class Index{
         switch($request_type){
             case "POST":
                 $this->post($request);
+                break;
             case "GET":
             default:
                 $this->get($request);
