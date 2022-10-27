@@ -25,8 +25,8 @@
         methods: {
 
             // 提交
-            submit(search = this.search){
-
+            submit(search = this.search,programId = this.programId){
+                if(programId===0) {toastr.warning("请选择需要查询的程序");return;}
                 if (inisHelper.is.empty(search)) toastr.warning("请提交需要被查询的域名！");
                 else if (!inisHelper.is.domain(search)) toastr.warning("请提交一个正确的的域名！");
                 else {
@@ -34,7 +34,8 @@
                     this.is_load = true
 
                     const params = inisHelper.stringfy({
-                        search
+                        search,
+                        programId
                     })
 
                     axios.post('/index/genuine', params).then(res=>{
