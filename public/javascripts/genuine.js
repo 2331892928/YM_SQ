@@ -16,7 +16,7 @@
                 topDomain: {},
                 is_show: false,     // 显示
                 is_load: false,     // 加载中
-                programList: {"请选择程序":0},
+                programList: {"a":0},
             }
         },
         mounted() {
