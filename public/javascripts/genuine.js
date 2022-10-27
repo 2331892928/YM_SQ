@@ -59,9 +59,9 @@
             program(){
                 axios.put('/index/genuine').then(res=>{
 
-                    if (res.data.code == 200) {
+                    if (res.data.code === 200) {
 
-                        this.programList = this.programList.concat(res.data.data)
+                        this.programList = Object.assign(this.programList,res.data.data)
                         console.log(this.programList)
                     } else toastr.error(res.data.msg);
 
