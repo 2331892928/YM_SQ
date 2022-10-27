@@ -16,7 +16,7 @@
                 topDomain: {},
                 is_show: false,     // 显示
                 is_load: false,     // 加载中
-                programList: {},
+                programList: {"请选择程序":0},
             }
         },
         mounted() {
@@ -62,6 +62,7 @@
                     if (res.data.code === 200) {
 
                         this.programList = Object.assign(this.programList,res.data.data)
+                        // this.programList = res.data.data
                         console.log(this.programList)
                     } else toastr.error(res.data.msg);
 
