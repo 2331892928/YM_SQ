@@ -10,6 +10,7 @@
         data() {
             return {
                 search:'',          // 搜索
+                programId:0,          // id
                 notes : {},
                 domain: {},
                 topDomain: {},
